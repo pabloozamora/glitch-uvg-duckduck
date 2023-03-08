@@ -1,32 +1,17 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import { MessageSquare } from './components/MessageSquare/MessageSquare'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const title1 = "Extensión de Navegador Privada"
+  const description1 = "Navega como siempre y nosotros nos encargamos del resto. Te ofrecemos buscador, bloqueador de rastreadores y mejora de encriptación todo en una descarga, para los"
+  const description2 = "Busca de forma privada con nuestra app o extensión, añade búsqueda web privada a tu navegador preferido o busca en"
+  const title2 = "Motor de Búsqueda Privada"
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <MessageSquare title = {title1} description={description1} link="https://duckduckgo.com/app" linkText="principales navegadores."/>
+      <MessageSquare title = {title2} description={description2} link="https://duckduckgo.com/" linkText="duckduckgo.com."/>
     </div>
   )
 }
