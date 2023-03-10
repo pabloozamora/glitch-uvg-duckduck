@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import laptop from './assets/laptop.svg'
 import search from './assets/search.svg'
 import mobile from './assets/mobile.svg'
+import logo from './assets/logo.svg'
 import './App.css'
 import { MessageSquare } from './components/MessageSquare/MessageSquare'
 
@@ -15,6 +16,10 @@ function App() {
   const description3 = "Nuestro navegador privado para móviles viene equipado con nuestro motor de búsqueda, bloqueador de rastreadores, mejora de encriptación y más. Disponible para"
   return (
     <div className="App">
+      <div className="SearchWrapper">
+        <img className = "logo" src = {logo}></img>
+        <p className = "Name">DuckDuckGo</p>
+      </div>
       <div className='SquareMessageWrapper'>
         <MessageSquare icon = {laptop} title = {title1} description={description1} link="https://duckduckgo.com/app" linkText="principales navegadores."/>
         <MessageSquare icon = {search} title = {title2} description={description2} link="https://duckduckgo.com/" linkText="duckduckgo.com."/>
