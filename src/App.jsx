@@ -18,7 +18,6 @@ function App() {
     <div className="App">
       <div className="SearchWrapper">
         <img className = "logo" src = {logo}></img>
-        <p className = "Name">DuckDuckGo</p>
       </div>
       <div className='SquareMessageWrapper'>
         <MessageSquare icon = {laptop} title = {title1} description={description1} link="https://duckduckgo.com/app" linkText="principales navegadores."/>
